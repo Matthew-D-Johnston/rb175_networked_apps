@@ -1,0 +1,19 @@
+<div>
+  <ul>
+    <h4>E-Mail</h4>
+      <ul>
+        <li><%= @email %></li>
+      </ul>
+    <h4>Interests</h4>
+    <ul>
+        <li><%= @interests.join(', ') %></li>
+    </ul>
+  </ul>
+</div>
+<div>
+  <p>
+    <% @other_users.each do |user| %>
+      <a href="/<%= user %>"><%= user %></a>
+    <% end %> 
+  </p>
+</div>
